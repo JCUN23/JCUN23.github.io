@@ -1,0 +1,172 @@
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #C1C1C1;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+  }
+  .top-row { 
+      display: flex;
+      flex-direction: row;
+      margin-bottom: -1em;
+  }
+  video {
+      position: relative;
+      width: 85px;
+      height: 56px;
+      left: 10px;
+  }
+  .search-bar { 
+      position: relative;
+      left: 30px;
+      top: 5px;
+      display: flex;
+      background: white;
+      width: 47vw;
+      height: 0px;
+  }
+  .bar {
+      width: 40vw;
+      height: 32.5ßpx;
+      position: absolute;
+      top: 0px;
+      left: 15px;
+      border: 1px solid #5f6367;
+      border-radius: 25px;
+      }
+  .bar-p {
+      position: absolute;
+      left: 55px;
+      top: -14px;
+      font-family: Arial;
+      font-size: 20px;
+      line-height: 28px;
+      width: 447px;
+      height: 23px;
+      padding: 0;
+  }
+  .tabs { 
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      margin-bottom: 0;
+      left: 100px;
+  }
+  .tab {
+      font-family: Arial;
+      margin-right: 5em;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+  }
+  .active {
+      color: #4C90F6;
+      border-bottom: 2px solid #4C90F6;
+  }
+
+  body {
+    background: black;
+    color: white;
+  }
+
+  body {
+    font-family: Arial;
+    position: relative; }
+    body .top-bar {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #8D8D8D;
+      margin-top: 0;
+      margin-left: 0; }
+      body .top-bar img {
+        position: relative;
+        top: 0px;
+        margin-right: 6em;
+        left: 0;
+        margin-bottom: -40px;
+        width: 90px;
+        height: 60px;
+    margin-left: 25px; }
+      body .top-bar p {
+        position: relative;
+        color: #989898;
+        font-size: 20px; }
+    body .columns {
+      display: flex;
+      flex-direction: row; }
+      body .columns .left-col {
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+        body .columns .left-col .dates {
+          border-bottom: 1px solid #8D8D8D;
+          position: relative;
+          left: -40px; }
+          body .columns .left-col .dates .active {
+            color: red; }
+          body .columns .left-col .dates .date {
+            position: relative;
+            left: -15px;
+            font-size: 18px;
+            margin-bottom: 10px; }
+        body .columns .left-col .sort {
+          display: flex;
+          flex-direction: column; }
+          body .columns .left-col .sort p {
+            font-size: 18px;
+            margin-bottom: -12px;
+            position: relative;
+            left: -15px; }
+          body .columns .left-col .sort .active {
+            color: red; }
+      body .columns .right-col {
+        display: flex;
+        flex-direction: column; }
+        body .columns .right-col .result {
+          border-bottom: 1px solid #8D8D8D; }
+          body .columns .right-col .result h1 {
+            font-size: 32px;
+            margin-bottom: 0;
+            font-weight: normal;
+            margin-bottom: -15px; }
+          body .columns .right-col .result p {
+            font-size: 20px;
+            width: 70%; }
+  
+            #myButton {
+              display: block;
+              margin-left:  auto;
+              margin-right: 20px;
+              margin-top: 10px;
+              width: 10%;
+              height: 45px;
+              /* margin: 0 auto; */
+              font-size: 15px;
+              /* text-align: center; */
+              border-radius: 10px;
+              background: rgb(252, 50, 50);
+              outline: none;
+              border: none;
+              color: white;
+              box-shadow: 1px 14px 11px -10px rgba(0,0,0,0.68);
+            -webkit-box-shadow: 1px 14px 11px -10px rgba(0,0,0,0.68);
+            -moz-box-shadow: 1px 14px 11px -10px rgba(0,0,0,0.68);
+            text-shadow:
+            0 0 7px #fff,
+            0 0 21px #fff;
+            }
+              #myButton:hover {
+                cursor: pointer;
+                box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
+              -webkit-box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
+              -moz-box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
+              transition: all .25s ease-out;
+              width: 11%;
+            
+              }

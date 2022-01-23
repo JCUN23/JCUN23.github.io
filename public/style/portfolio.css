@@ -1,0 +1,172 @@
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #C1C1C1;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+.top-row { 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -1em;
+}
+video {
+    position: relative;
+    width: 85px;
+    height: 56px;
+    left: 10px;
+}
+.search-bar { 
+    position: relative;
+    left: 30px;
+    top: 5px;
+    display: flex;
+    background: white;
+    width: 47vw;
+    height: 0px;
+}
+.bar {
+    width: 40vw;
+    height: 32.5ßpx;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    border: 1px solid #5f6367;
+    border-radius: 25px;
+    }
+.bar-p {
+    position: absolute;
+    left: 55px;
+    top: -14px;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 28px;
+    width: 447px;
+    height: 23px;
+    padding: 0;
+}
+.tabs { 
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 0;
+    left: 100px;
+}
+.tab {
+    font-family: Arial;
+    margin-right: 5em;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+.active {
+    color: #4C90F6;
+    border-bottom: 2px solid #4C90F6;
+}
+
+  body {
+    background: black;
+    color: white;
+
+  }
+
+
+    body .banner video {
+      width: 200px;
+      height: 204.64px;
+      margin-bottom: -120px;
+      margin-top: -40px; }
+    body .videos {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column; }
+      body .videos .video {
+        width: 90%;
+        height: 389px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(109, 109, 109, 0.54);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row; }
+        body .videos .video .video-panel {
+          position: relative;
+          left: 30px;
+          top: 10px;
+          width: 400px;
+          height: 250px;
+          margin-top: 75px;
+          margin-right: 8em; }
+          body .videos .video .video-panel iframe {
+            position: relative;
+            width: 450px;
+            height: 250px;
+            border: .5px solid gray;
+-webkit-box-shadow: 0px 5px 25px 1px #121212; 
+box-shadow: 0px 5px 25px 1px #121212; }
+        body .videos .video .info {
+          display: flex;
+          font-family: Arial;
+          padding: 75px 0;
+          width: 50%;
+          flex-direction: column; }
+          body .videos .video .info h3 {
+            margin-bottom: 0; }
+          body .videos .video .info p {
+            font-size: 18px; }
+        body .videos .video .info2 {
+          display: flex;
+          font-family: Arial;
+          padding: 25px 0;
+          width: 90%;
+          flex-direction: column; }
+          body .videos .video .info h3 {
+            margin-bottom: 0; }
+          body .videos .video .info p {
+            font-size: 18px; }
+  
+  .full {
+    margin: 0 auto;
+    background: #c4302b;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    font-weight: bold; }
+  
+    #myButton {
+      display: block;
+      margin-left:  auto;
+      margin-right: 20px;
+      margin-top: 10px;
+      width: 10%;
+      height: 45px;
+      /* margin: 0 auto; */
+      font-size: 15px;
+      /* text-align: center; */
+      border-radius: 10px;
+      background: rgb(252, 50, 50);
+      outline: none;
+      border: none;
+      color: white;
+      box-shadow: 1px 14px 11px -10px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 1px 14px 11px -10px rgba(0,0,0,0.68);
+    -moz-box-shadow: 1px 14px 11px -10px rgba(0,0,0,0.68);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 21px #fff;
+    }
+      #myButton:hover {
+        cursor: pointer;
+        box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
+      -webkit-box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
+      -moz-box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
+      transition: all .25s ease-out;
+      width: 11%;
+    
+      }

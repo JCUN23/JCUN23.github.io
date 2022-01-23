@@ -1,0 +1,87 @@
+<head>
+  <link rel="stylesheet" href="../style/resume2.css">
+</head>
+<header id="myHeader">
+  <div class="top-row">
+    <a href="../index.html">
+      <video disableRemotePlayback autoplay muted loop id="myVideo">
+        <source src="../assets/DD-unscreen.mp4" type="video/mp4">
+      </video>
+    </a>
+    <div class="search-bar">
+      <img class="bar" src="../assets/bar-dark.png" alt="bar">
+      <p class="bar-p">Resumes that meet everything I'm looking for</p>
+    </div>
+    <button id="myButton" onclick="Buttontoggle()" value="DARK">Toggle Light Mode</button>
+
+  </div>
+  <ul class="tabs">
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../templates/about.html">All</a></li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../templates/wiki.html">About</a></li>
+    <li class="tab active"><a style="text-decoration: none; color: inherit" href="../templates/resume.html">Resume</a>
+    </li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../templates/portfolio.html">Portfolio</a>
+    </li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../templates/contact.html">Contact Me</a>
+    </li>
+  </ul>
+</header>
+
+<body>
+  <div class="top-bar">
+    <a href="../templates/resume.html"><img src="../assets/scholar-dark.png" alt=""></a>
+    <a href="https://docs.google.com/document/d/1m80brQ6bSwMCpcH9Jezf389aTEB6cvSEKv_-Bgg1cZE/edit?usp=sharing"
+      target="_blank"><button class="resume-button">Add to my library</button></a>
+    <a><button class="resume-button">Write a review</button></a>
+    <p style="font-size: 24px"><span style="color: red">Subject:</span> Looking for full time positions for Summer 2023!
+    </p>
+  </div>
+  <ul style="list-style-type: none" class="columns">
+    <li class="left-col">
+      <a href="https://docs.google.com/document/d/1m80brQ6bSwMCpcH9Jezf389aTEB6cvSEKv_-Bgg1cZE/edit?usp=sharing"
+        target="_blank"><button class="resume-button2">Download Resume</button></a>
+    </li>
+    <li class="right-col" id="right">
+      <img src="../assets/resume.png" alt="resume">
+    </li>
+  </ul>
+  <script>
+    function Buttontoggle() {
+      var t = document.getElementById("myButton");
+      var logo = document.getElementById("myVideo");
+      var body = document.body;
+      var top_row = document.getElementById("myHeader");
+      var right = document.getElementById("right")
+      if (t.value == "DARK") {
+        body.style.background = "white";
+        body.style.color = "black";
+        
+        t.value = "LIGHT";
+        t.innerText = "Toggle Dark Mode";
+
+        logo.src = "../assets/logo-light.mp4";
+
+        top_row.style.background = "white";
+        top_row.style.color = "black";
+
+        right.style.background = "#E6E5E5";
+
+      }
+      else {
+        body.style.background = "black";
+        body.style.color = "white";
+
+        t.value = "DARK";
+        t.innerText = "Toggle Light Mode";
+
+        logo.src = "../assets/DD-unscreen.mp4";
+
+        top_row.style.background = "black";
+        top_row.style.color = "white";
+
+        right.style.background = "rgb(61, 61, 61)";
+
+      }
+    }
+  </script>
+</body>
