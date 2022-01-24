@@ -21,7 +21,7 @@
 <body>
   <div class="container">
     <video disableRemotePlayback autoplay class="video1" muted loop id="myVideo">
-      <source src="../public/assets/DD-unscreen.mp4" type="video/mp4">
+      <source src="" type="video/mp4">
     </video>
   </div>
   <div class="search-bar">
@@ -35,79 +35,17 @@
   </div>
   <div class="buttons"
     style="display: flex; flex-direction: horizontal; margin-left: 0px; margin-bottom: 15px; margin-top: 10px;">
-    <a href="../public/templates/about.html" style="margin: 0 auto; margin-right: 250px;"><button
-        class="lucky fast-transition">
-        <p>Google Search</p>
+    <a href="../public/templates/about.html" style="margin: 0 auto; margin-right: 250px;" ><button
+        class="lucky fast-transition" id="search">
+        <p id="search">Google Search</p>
       </button></a>
     <a href="#" style="margin: 0 auto; margin-left: -220px;" id="lucky" onclick="yourFunction()"><button
         class="lucky fast-transition" id="lucky">
         <p>I'm Feeling Lucky</p>
       </button></a>
   </div>
-  <button id="myButton" onclick="Buttontoggle()" value="DARK">Toggle Light Mode</button>
-
-  <script>
-    function Buttontoggle() {
-      var t = document.getElementById("myButton");
-      var logo = document.getElementById("myVideo");
-      var body = document.body;
-      var buttons = document.getElementsByClassName("lucky");
-      var message = document.getElementsByClassName("moving-text");
-      var type = document.getElementsByClassName("wrap");
-      var mag = document.getElementsByClassName("mag");
-      if (t.value == "DARK") {
-        // body.classList.toggle("light-mode");
-        // message[0].classList.toggle("light-type");
-        // type[0].classList.toggle("light-type");
-        // buttons[0].classList.toggle("light-button");
-        // buttons[1].classList.toggle("light-button");
-        body.style.background = "white";
-        body.style.color = "black";
-
-        message[0].style.color = "black";
-
-        t.value = "LIGHT";
-        t.innerText = "Toggle Dark Mode";
-
-        logo.src = "../public/assets/logo-light.mp4";
-
-        buttons[0].style.transition = "all .5s ease-out";
-        buttons[0].style.transition = "0.4s ease-out";
-        buttons[0].style.background = "#D1D1D1";
-        buttons[0].style.color = "black";
-        buttons[1].style.background = "#D1D1D1";
-        buttons[1].style.transition = "all .5s ease-out";
-        buttons[1].style.transition = "0.4s ease-out";
-        buttons[1].style.color = "black";
-
-      }
-      else {
-        // body.classList.toggle("dark-mode");
-        // message[0].classList.toggle("dark-type");
-        // type[0].classList.toggle("dark-type");
-        // buttons[0].classList.toggle("dark-button");
-        // buttons[1].classList.toggle("dark-button");
-        body.style.background = "black";
-        body.style.color = "white";
-
-        message[0].style.color = "white";
-
-        t.value = "DARK";
-        t.innerText = "Toggle Light Mode";
-
-        logo.src = "../public/assets/DD-unscreen.mp4";
-
-        buttons[0].style.transition = "all .5s ease-out";
-        buttons[0].style.transition = "0.4s ease-out";
-        buttons[0].style.background = "#636364";
-        buttons[0].style.color = "white";
-        buttons[1].style.background = "#636364";
-        buttons[1].style.transition = "all .5s ease-out";
-        buttons[1].style.transition = "0.4s ease-out";
-        buttons[1].style.color = "white";
-      }
-    }
-  </script>
+  <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
+  <script src="../public/style/darkmode.js"></script>
 </body>
 
 </html>
