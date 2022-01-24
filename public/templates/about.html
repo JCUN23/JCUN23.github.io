@@ -3,7 +3,8 @@
   <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>Josh Cunningham</title>
 </head>
 <header id="myHeader">
   <div class="top-row">
@@ -16,7 +17,7 @@
       <img class="bar" src="../assets/bar-dark.png" alt="bar">
       <p class="bar-p">Josh Cunningham</p>
     </div>
-    <button id="myButton" onclick="Buttontoggle()" value="DARK">Toggle Light Mode</button>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
   </div>
   <ul class="tabs">
     <li class="tab active"><a style="text-decoration: none; color: inherit" href="../templates/about.html">All</a></li>
@@ -125,58 +126,11 @@
         <a style="text-decoration: none" href="https://www.linkedin.com/in/joshua-cunningham-923622193/"
           target="_blank"><img class="social" src="../assets/linked.png" alt="linkedIn"></a>
         <a style="text-decoration: none" href="https://github.com/jcun-umich/portfolio" target="_blank"><img
-            class="social" src="../assets/github.png" width="25px" height="25px" alt="github"></a>
+            class="social" id="github" src="../assets/github.png" width="25px" height="25px" alt="github"></a>
         <a style="text-decoration: none" href="https://www.instagram.com/jshcnnnghm/" target="_blank"><img
             class="social" src="../assets/insta.png" width="25px" height="25px" alt="instagram"></a>
       </div>
     </li>
   </ul>
-  <script>
-    function Buttontoggle() {
-      var t = document.getElementById("myButton");
-      var logo = document.getElementById("myVideo");
-      var body = document.body;
-      var top_row = document.getElementById("myHeader");
-      var content = document.getElementById("content");
-      var urls = document.getElementsByClassName("url");
-      if (t.value == "DARK") {
-        body.style.background = "white";
-        body.style.color = "black";
-        
-        t.value = "LIGHT";
-        t.innerText = "Toggle Dark Mode";
-
-        logo.src = "../assets/logo-light.mp4";
-
-        top_row.style.background = "white";
-        top_row.style.color = "black";
-        
-        content.style.color = "black";
-
-        for (let i = 0; i < urls.length; i++) {
-          urls[i].style.color = "green";
-        }
-
-      }
-      else {
-        body.style.background = "black";
-        body.style.color = "white";
-
-        t.value = "DARK";
-        t.innerText = "Toggle Light Mode";
-
-        logo.src = "../assets/DD-unscreen.mp4";
-
-        top_row.style.background = "black";
-        top_row.style.color = "white";
-
-        content.style.color = "white";
-
-        
-        for (let i = 0; i < urls.length; i++) {
-          urls[i].style.color = "#b4b4b4";
-        }
-      }
-    }
-  </script>
+  <script src="../style/darkmode.js"></script>
 </body>

@@ -1,5 +1,7 @@
 <head>
     <link rel="stylesheet" href="../style/contact.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Contact Josh Cunningham</title>
 </head>
 <header id="myHeader">
     <div class="top-row">
@@ -12,7 +14,7 @@
             <img class="bar" src="../assets/bar-dark.png" alt="bar">
             <p class="bar-p">How do I contact Josh Cunningham?</p>
         </div>
-        <button id="myButton" onclick="Buttontoggle()" value="DARK">Toggle Light Mode</button>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
     </div>
     
     <ul class="tabs">
@@ -87,7 +89,7 @@
                         <ul style="list-style-type: none; margin-left: -40px; height: 200%; margin-top: 20px">
                             <li>
                                 <ul
-                                    style="list-style-type: none; display: flex; flex-direction: horizontal; border-bottom: 1px solid white; padding: 15px">
+                                    style="list-style-type: none; display: flex; flex-direction: horizontal; padding: 15px">
                                     <li>
                                         <a
                                             href="mailto:jcun@umich.edu?subject=Internship%20Position&body=Hello%20Josh%2C%20I%20saw%20your%20website%20and%20would%20like%20to%20discuss%20an%20internship%20position%20with%20you!">
@@ -137,6 +139,8 @@
             </ul>
         </div>
     </center>
+    <script src="../style/darkmode.js"></script>
+
     <script>
         function Buttontoggle() {
           var t = document.getElementById("myButton");

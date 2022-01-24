@@ -1,5 +1,7 @@
 <head>
   <link rel="stylesheet" href="../style/portfolio.css">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>Porfolio</title>
 </head>
 <header id="myHeader">
   <div class="top-row">
@@ -12,7 +14,7 @@
       <img class="bar" src="../assets/bar-dark.png" alt="bar">
       <p class="bar-p">Really cool coding projects</p>
     </div>
-    <button id="myButton" onclick="Buttontoggle()" value="DARK">Toggle Light Mode</button>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
 
   </div>
   <ul class="tabs">
@@ -159,41 +161,5 @@
     </li>
 
   </ul>
-  <script>
-    function Buttontoggle() {
-      var t = document.getElementById("myButton");
-      var logo = document.getElementById("myVideo");
-      var body = document.body;
-      var top_row = document.getElementById("myHeader");
-      var tube = document.getElementById("myVideo2");
-      if (t.value == "DARK") {
-        body.style.background = "white";
-        body.style.color = "black";
-        
-        t.value = "LIGHT";
-        t.innerText = "Toggle Dark Mode";
-
-        logo.src = "../assets/logo-light.mp4";
-
-        top_row.style.background = "white";
-        top_row.style.color = "black";
-
-        tube.src = "../assets/joshtube.mp4";
-      }
-      else {
-        body.style.background = "black";
-        body.style.color = "white";
-
-        t.value = "DARK";
-        t.innerText = "Toggle Light Mode";
-
-        logo.src = "../assets/DD-unscreen.mp4";
-
-        top_row.style.background = "black";
-        top_row.style.color = "white";
-
-        tube.src = "../assets/joshtube-dark.mp4";
-      }
-    }
-  </script>
+  <script src="../style/darkmode.js"></script>
 </body>

@@ -1,5 +1,7 @@
 <head>
   <link rel="stylesheet" href="../style/wiki.css">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>About Josh Cunningham</title>
 </head>
 <header id="myHeader">
   <div class="top-row">
@@ -12,7 +14,7 @@
       <img class="bar" src="../assets/bar-dark.png" alt="bar">
       <p class="bar-p">Who is Josh Cunningham?</p>
     </div>
-    <button id="myButton" onclick="Buttontoggle()" value="DARK">Toggle Light Mode</button>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
 
   </div>
   <ul class="tabs">
@@ -162,59 +164,5 @@
       </div>
     </li>
   </ul>
-  <script>
-    function Buttontoggle() {
-      var t = document.getElementById("myButton");
-      var logo = document.getElementById("myVideo");
-      var body = document.body;
-      var top_row = document.getElementById("myHeader");
-      var img = document.getElementById("myVideo2")
-      var contents = document.getElementById("contents");
-      var right = document.getElementById("right")
-      var table = document.getElementsByClassName("table");
-      if (t.value == "DARK") {
-        body.style.background = "white";
-        body.style.color = "black";
-        
-        t.value = "LIGHT";
-        t.innerText = "Toggle Dark Mode";
-
-        logo.src = "../assets/logo-light.mp4";
-
-        top_row.style.background = "white";
-        top_row.style.color = "black";
-
-        img.src = "../assets/joshipedia-light.png";
-
-        contents.style.border = "1px solid black";
-        right.style.border = "1px solid black";
-
-        for (let i = 0; i < table.size; i++) {
-          table[i].style.border = "1px solid black";
-        }
-
-      }
-      else {
-        body.style.background = "black";
-        body.style.color = "white";
-
-        t.value = "DARK";
-        t.innerText = "Toggle Light Mode";
-
-        logo.src = "../assets/DD-unscreen.mp4";
-
-        top_row.style.background = "black";
-        top_row.style.color = "white";
-
-        img.src = "../assets/joshipedia-dark.png";
-
-        contents.style.border = "1px solid white";
-        right.style.border = "1px solid white";
-
-        for (let i = 0; i < table.size; i++) {
-          table[i].style.border = "1px solid white";
-        }
-      }
-    }
-  </script>
+  <script src="../style/darkmode.js"></script>
 </body>
