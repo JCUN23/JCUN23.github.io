@@ -54,22 +54,22 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 
-    var dt = new Date();
-    var dict = {};
-    dict["January"] = "../public/assets/DD-unscreen.mp4";
-    dict["February"] = "../public/assets/DD-unscreen.mp4";
-    dict["March"] = "../public/assets/DD-unscreen.mp4";
-    dict["April"] = "../public/assets/DD-unscreen.mp4";
-    dict["May"] = "../public/assets/DD-unscreen.mp4";
-    dict["June"] = "../public/assets/DD-unscreen.mp4";
-    dict["July"] = "../public/assets/DD-unscreen.mp4";
-    dict["August"] = "../public/assets/DD-unscreen.mp4";
-    dict["September"] = "../public/assets/DD-unscreen.mp4";
-    dict["October"] = "../public/assets/DD-unscreen.mp4";
-    dict["November"] = "../public/assets/DD-unscreen.mp4";
-    dict["December"] = "../public/assets/DD-unscreen.mp4";
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    document.getElementById("myVideo").setAttribute("src", dict[months[dt.getMonth()]]);
+    // var dt = new Date();
+    // var dict = {};
+    // dict["January"] = "../public/assets/DD-unscreen.mp4";
+    // dict["February"] = "../public/assets/DD-unscreen.mp4";
+    // dict["March"] = "../public/assets/DD-unscreen.mp4";
+    // dict["April"] = "../public/assets/DD-unscreen.mp4";
+    // dict["May"] = "../public/assets/DD-unscreen.mp4";
+    // dict["June"] = "../public/assets/DD-unscreen.mp4";
+    // dict["July"] = "../public/assets/DD-unscreen.mp4";
+    // dict["August"] = "../public/assets/DD-unscreen.mp4";
+    // dict["September"] = "../public/assets/DD-unscreen.mp4";
+    // dict["October"] = "../public/assets/DD-unscreen.mp4";
+    // dict["November"] = "../public/assets/DD-unscreen.mp4";
+    // dict["December"] = "../public/assets/DD-unscreen.mp4";
+    // const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    // document.getElementById("myVideo").setAttribute("src", dict[months[dt.getMonth()]]);
 
     num = Math.floor(Math.random() * 4);
     const pages = ["../templates/about.html", "../templates/wiki.html", "../templates/resume.html", "../templates/portfolio.html"];

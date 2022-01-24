@@ -103,6 +103,41 @@ body {
     margin-top: -10px;
 }
 
+#lucky:hover {
+    -webkit-animation: zomg 1.5s infinite;
+    animation: zomg 1.5s infinite;
+}
+  
+@-webkit-keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
+}
+@keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
+}
+
+#search:hover {
+  -webkit-animation: green-fade 1.0s infinite;
+  animation: green-fade 1.0s infinite;
+}
+
+@-webkit-keyframes green-fade {
+  0%, 100% { color: #2ecc40; }
+}
+@keyframes green-fade {
+  0%, 100% { color: #2ecc40; }
+}
+
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.01s
 }
@@ -142,47 +177,7 @@ body {
   opacity: 1;
 }
 
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.light-type {
-  color: black;
-}
-
-.dark-type {
-  color: white;
-}
-
-.light-button {
-  background: linear-gradient(to right, #0099ff 50%, #d6d5d5 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
-  text-align: center;
-  align-items: center;
-  transition: 0.4s ease-out;
-  color: black;
-}
-
-.dark-button {
-  background: linear-gradient(to right, #0099ff 50%, #636364 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
-  text-align: center;
-  align-items: center;
-  transition: 0.4s ease-out;
-  color: white;
-}
-
-#myButton {
+#dark-mode-toggle {
   width: 25%;
   height: 50px;
   margin: 0 auto;
@@ -200,7 +195,7 @@ text-shadow:
 0 0 7px #fff,
 0 0 21px #fff;
 }
-  #myButton:hover {
+  #dark-mode-toggle:hover {
     cursor: pointer;
     box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
   -webkit-box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
@@ -209,77 +204,3 @@ text-shadow:
   width: 26%;
 
   }
-
-/* .buttons {
-  margin: 0 auto;
-  margin-top: 1em;
-  margin-left: 315px;
-  li
-    button
-      border: 0
-      margin-right: 15px
-      background-color: white
-      outline: gray
-      padding: .5rem .6rem
-      box-shadow: 0px 5px 10px rgba(black, 40%)
-      transition: all .3s
-      cursor: pointer
-      border-radius: 40px
-      border-bottom: 4px solid lighten(gray, 70%)
-      &:hover
-        box-shadow: 0px 15px 25px -5px rgba(black, 40%)
-        transform: scale(1.03)
-      &:active
-        box-shadow: 0px 4px 8px rgba(black, 30%)
-        transform: scale(.98)
-} */
-/* 
-</style>
-<style lang="scss" scoped>
-// variables
-$cancel: #e25434;
-$white: #F1F2F2;
-$transition: all 0.25s ease-in-out;
-
-// mixin
-@mixin mybutton($color_1, $color_2) {
-  color: $color_1;
-  background-color: $color_2;
-  transition: $transition;
-  &:hover {
-    background-color: $color_1;
-    border-color: $color_1;
-    color: $color_2;
-  }
-  &:active {
-    background-color: $color_1;
-    border-color: $color_1;
-    color: $color_2;
-    box-shadow: none;
-  }
-  &:focus, &:active:focus {
-    background-color: $color_1;
-    border-color: $color_1;
-    color: $color_2;
-    outline: 5px auto $color_1;
-  }
-  &:visited {
-    background-color: $color_1;
-    border-color: $color_1;
-  }
-}
-
-// styles
-.btn1 {
-  @include mybutton($cancel, $cancel);
-}
-
-.btn2 {
-  @include mybutton($cancel, $cancel);
-}
-
-.btn3 {
-  @include mybutton($cancel, $cancel);
-}
-
-</style> */

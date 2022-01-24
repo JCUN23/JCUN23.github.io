@@ -40,7 +40,8 @@ header {
   .bar-p {
       position: absolute;
       left: 55px;
-      top: -14px;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
       font-family: Arial;
       font-size: 20px;
       line-height: 28px;
@@ -205,7 +206,7 @@ header {
             transition: border 1.0s linear, box-shadow 1.0s linear;
 }
 
-#myButton {
+#dark-mode-toggle {
   display: block;
   margin-left:  auto;
   margin-right: 20px;
@@ -227,7 +228,7 @@ text-shadow:
 0 0 7px #fff,
 0 0 21px #fff;
 }
-  #myButton:hover {
+  #dark-mode-toggle:hover {
     cursor: pointer;
     box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
   -webkit-box-shadow: 1px 14px 15px 1px rgba(0,0,0,0.68);
