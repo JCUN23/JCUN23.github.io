@@ -80,10 +80,13 @@ const enableDarkMode = () => {
     
             tube.src = "../assets/joshtube-dark.mp4";
         }
-        else if (page === "resume2.html") {
+        else if (page === "resume.html" || page === "transcript.html" || page === "certificate.html") {
             var right = document.getElementById("right");
-    
             right.style.background = "rgb(61, 61, 61)";
+
+            document.getElementsByClassName("bar")[0].src = "../../assets/bar-dark.png";
+            var logo = document.getElementById("myVideo");
+            logo.src = "../../assets/DD-unscreen.mp4";
         }
         else if (page === "wiki.html") {
             var img = document.getElementById("myVideo2")
@@ -182,10 +185,12 @@ const disableDarkMode = () => {
     
             tube.src = "../assets/joshtube.mp4";
         }
-        else if (page === "resume2.html") {
+        else if (page === "resume.html" || page === "transcript.html" || page === "certificate.html") {
             var right = document.getElementById("right");
-    
             right.style.background = "#E6E5E5";
+            document.getElementsByClassName("bar")[0].src = "../../assets/bar-light.png";
+            var logo = document.getElementById("myVideo");
+            logo.src = "../../assets/logo-light.mp4";
         }
         else if (page === "wiki.html") {
             var img = document.getElementById("myVideo2")
