@@ -4,7 +4,7 @@
   "description": "website",
   "main": "https://github.com/JCUN23/website2.0/blob/main/public/index.html",
   "scripts": {
-    "build": "npm run build"
+    "build": "npm run-script build"
   },
   "repository": {
     "type": "git",
