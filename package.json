@@ -2,7 +2,7 @@
   "name": "website",
   "version": "1.0.0",
   "description": "website",
-  "main": "index.js",
+  "main": "https://github.com/JCUN23/website2.0/blob/main/public/index.html",
   "scripts": {
     "build": "npm build"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JCUN23/website2.0/issues"
   },
-  "homepage": "https://github.com/JCUN23/website2.0#readme"
+  "homepage": "https://github.com/JCUN23/website2.0#readme",
+  "dependencies": {
+    "build": "^0.1.4"
+  }
 }
