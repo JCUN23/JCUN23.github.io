@@ -4,7 +4,7 @@
   "description": "website",
   "main": "https://github.com/JCUN23/website2.0/main/public/index.html",
   "scripts": {
-    "deploy": "npm build public"
+    "deploy": "CI= npm build public"
   },
   "repository": {
     "type": "git",
