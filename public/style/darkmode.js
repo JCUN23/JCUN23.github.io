@@ -1,15 +1,13 @@
 // check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem('darkMode'); 
+let darkMode = localStorage.getItem('darkMode');
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
-
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
 console.log( page );
-
 const enableDarkMode = () => {
-    if (page === "index.html") {
+    if (page === "index.html" || path === "/") {
         var t = document.getElementById("dark-mode-toggle");
         var logo = document.getElementById("myVideo");
         var body = document.body;
@@ -17,13 +15,13 @@ const enableDarkMode = () => {
         var message = document.getElementsByClassName("moving-text");
         var type = document.getElementsByClassName("wrap");
         var mag = document.getElementsByClassName("mag");
-        document.getElementsByClassName("mag")[0].src = "../public/assets/bar-dark.png";
+        document.getElementsByClassName("mag")[0].src = "assets/bar-dark.png";
 
         body.style.background = "black";
         body.style.color = "white";
         message[0].style.color = "white";
         t.innerText = "Toggle Light Mode";
-        logo.src = "../public/assets/DD-unscreen.mp4";
+        logo.src = "assets/DD-unscreen.mp4";
         buttons[0].style.transition = "all .5s ease-out";
         buttons[0].style.transition = "0.4s ease-out";
         buttons[0].style.background = "#636364";
@@ -109,7 +107,7 @@ const enableDarkMode = () => {
 }
 
 const disableDarkMode = () => {
-    if (page === "index.html") {
+    if (page === "index.html" || page === "") {
         var t = document.getElementById("dark-mode-toggle");
         var logo = document.getElementById("myVideo");
         var body = document.body;
@@ -117,7 +115,7 @@ const disableDarkMode = () => {
         var message = document.getElementsByClassName("moving-text");
         var type = document.getElementsByClassName("wrap");
         var mag = document.getElementsByClassName("mag");
-        document.getElementsByClassName("mag")[0].src = "../public/assets/bar-light.png";
+        document.getElementsByClassName("mag")[0].src = "assets/bar-light.png";
 
         body.style.background = "white";
         body.style.color = "black";
@@ -126,7 +124,7 @@ const disableDarkMode = () => {
         
         t.innerText = "Toggle Dark Mode";
         
-        logo.src = "../public/assets/logo-light.mp4";
+        logo.src = "assets/logo-light.mp4";
         
         buttons[0].style.transition = "all .5s ease-out";
         buttons[0].style.transition = "0.4s ease-out";

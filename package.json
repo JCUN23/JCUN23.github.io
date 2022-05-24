@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "https://github.com/JCUN23/website2.0/main/public/index.html",
+  "scripts": {
+    "deploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCUN23/website2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCUN23/website2.0/issues"
+  },
+  "homepage": "https://github.com/JCUN23/website2.0#readme",
+  "dependencies": {
+    "build": "^0.1.4",
+    "firebase": "^9.8.1",
+    "react-scripts": "^2.1.3"
+  }
+}

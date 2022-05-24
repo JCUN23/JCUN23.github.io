@@ -2,15 +2,14 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="../public/style/home.css">
+  <link rel="stylesheet" href="style/home.css">
   <title>Josh Cunningham</title>
-  <link rel="shortcut icon" href="../public/favicon.ico">
-  <script src="../public/style/typing.js"></script>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <script src="style/typing.js"></script>
   <script type="text/javascript">
     function yourFunction() {
       num = Math.floor(Math.random() * 5);
-      const pages = ["../public/templates/about.html", "../public/templates/wiki.html", "../public/templates/resume.html", "../public/templates/portfolio.html", "../public/templates/contact.html"];
-
+      const pages = ["/pages/about.html", "/pages/wiki.html", "/pages/resume.html", "/pages/portfolio.html", "/pages/contact.html"];
       var link = document.getElementById("lucky");
       link.setAttribute("href", pages[num]);
       return false;
@@ -25,7 +24,7 @@
     </video>
   </div>
   <div class="search-bar">
-    <img class="mag" src="../public/assets/bar-dark.png" alt="bar">
+    <img class="mag" src="/assets/bar-dark.png" alt="bar">
     <p class="moving-text">Is Josh Cunningham
       <a href="" class="typewrite" data-period="2000" data-type='[ "a developer?", "an engineer?", "a problem solver?",
                "a Wolverine?", "your next intern?" ]'>
@@ -35,7 +34,7 @@
   </div>
   <div class="buttons"
     style="display: flex; flex-direction: horizontal; margin-left: 0px; margin-bottom: 15px; margin-top: 10px;">
-    <a href="../public/templates/about.html" style="margin: 0 auto; margin-right: 250px;" ><button
+    <a href="/pages/about.html" style="margin: 0 auto; margin-right: 250px;" ><button
         class="lucky fast-transition" id="search">
         <p id="search">Google Search</p>
       </button></a>
@@ -45,7 +44,7 @@
       </button></a>
   </div>
   <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
-  <script src="../public/style/darkmode.js"></script>
+  <script src="style/darkmode.js"></script>
 </body>
 
 </html>

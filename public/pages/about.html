@@ -1,0 +1,135 @@
+<head>
+  <link rel="stylesheet" href="../style/about.css">
+  <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>Josh Cunningham</title>
+</head>
+<header id="myHeader">
+  <div class="top-row">
+    <a href="../index.html">
+      <video disableRemotePlayback autoplay muted loop id="myVideo">
+        <source src="../assets/DD-unscreen.mp4" type="video/mp4">
+      </video>
+    </a>
+    <div class="search-bar">
+      <img class="bar" src="../assets/bar-dark.png" alt="bar">
+      <p class="bar-p">Josh Cunningham</p>
+    </div>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
+  </div>
+  <ul class="tabs">
+    <li class="tab active"><a style="text-decoration: none; color: inherit" href="../pages/about.html">All</a></li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../pages/wiki.html">About</a></li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../pages/documents.html">Documents</a></li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../pages/portfolio.html">Portfolio</a>
+    </li>
+    <li class="tab"><a style="text-decoration: none; color: inherit" href="../pages/contact.html">Contact Me</a>
+    </li>
+  </ul>
+</header>
+
+<body>
+  <ul class="content" id="content">
+    <li class="left-side">
+      <p class="results" style="left: 1%">About 3 results (0.23 seconds)</p>
+      <ul class="links">
+        <li class="link">
+          <p class="url">joshipedia.org > About</p>
+          <a href="../pages/wiki.html" style="text-decoration: none; color: inherit">
+            <h3 class="web-title">About</h3>
+          </a>
+          <p class="info">Josh Cunningham is a third year student at the College of Engineering at the University of
+            Michigan, intending to major in both Computer Science and...</p>
+        </li>
+        <li class="link">
+          <p class="url">scholar.josh.com > Documents</p>
+          <a href="../pages/documents.html" style="text-decoration: none; color: inherit">
+            <h3 class="web-title">Documents</h3>
+          </a>
+          <p class="info">Really well made resume and other documents that highlight the qualifications of Josh Cunningham...</p>
+        </li>
+        <li class="link">
+          <p class="url">JoshTube.com > Portfolio</p>
+          <a href="../pages/portfolio.html" style="text-decoration: none; color: inherit">
+            <h3 class="web-title">Portfolio</h3>
+          </a>
+          <p class="info">Coding projects made for school and personal practice in a variety of programming languages...
+          </p>
+        </li>
+        <li class="link">
+          <p class="url">JoshX.com > Contact Me</p>
+          <a href="../pages/contact.html" style="text-decoration: none; color: inherit">
+            <h3 class="web-title">Contact Me</h3>
+          </a>
+          <p class="info">If you want to reach Josh Cunningham regarding internship or job opportunities, contact him
+            via...</p>
+        </li>
+      </ul>
+      <h2 class="top-title" style="margin-bottom: -50px">Top Stories</h2>
+      <ul class="news">
+        <a href="https://www.linkedin.com/posts/joshuarcunningham_qualtrics-qualtricslife-softwaredevelopment-activity-6875156182051373057-M3IG"
+          target="_blank" style="color:white">
+          <li class="piece qualtrics">
+            <h1 class="desc">Josh Cunningham accepts a Software Development Internship offer with Qualtrics for the
+              Summer of 2022!</h1>
+            <h2 class="date">December 2021</h2>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/posts/joshuarcunningham_internship-hail-computerscience-activity-6838245885185466368-ly9r"
+          target="_blank" style="color:white">
+          <li class="piece vitesco">
+            <h1 class="desc">Josh Cunningham concludes an eigth month internship with Vitesco Technologies.</h1>
+            <h2 class="date">August 2021</h2>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/posts/joshuarcunningham_im-pleased-to-announce-that-i-will-be-spending-activity-6744343010902847489-GVTz"
+          target="_blank" style="color:white">
+          <li class="piece vitesco">
+            <h1 class="desc">Josh Cunningham begins his Software Engineering Internship with Vitesco Technologies.</h1>
+            <h2 class="date">January 2021</h2>
+          </li>
+        </a>
+        <li class="piece michigan" style="color:white">
+          <h1 class="desc">Josh Cunningham begins a virtual second year at the University of Michigan College of
+            Engineering.</h1>
+          <h2 class="date">September 2020</h2>
+        </li>
+        <li class="piece acuitii" style="color:white">
+          <h1 class="desc">Josh Cunningham begins his first internship with Acuitii!</h1>
+          <h2 class="date">June 2020</h2>
+        </li>
+      </ul>
+    </li>
+    <li class="right-side">
+      <div class="container">
+        <carousel :loop="true" :autoplay="true" :perPage="1" :paginationEnabled="false" :easing="linear"
+          :autoplayHoverPause="true" :autoplayTimeout="8000" :centerMode="false">
+          <slide><img width="100%" height="200px" src="../assets/bluetie.png" alt="red shirt pic"></slide>
+        </carousel>
+      </div>
+      <div class="title-card" style="border-bottom: 1px solid #C1C1C1;">
+        <h2 style="margin-bottom: 5px; margin-left: 10px;   ">Josh Cunningham</h2>
+        <p class="title" style="margin-left: 10px;   ">Software Developer</p>
+      </div>
+      <div class="info-card" style="margin-top: 10px; margin-left: 10px">
+        <p>A software developer in training who enjoys both front end and back end developement. He
+          is currently looking for full time positions for after graduation.</p>
+        <p><span>Born:</span> February 23</p>
+        <p><span>Education:</span> University of Michigan, Ann Arbor, Michigan</p>
+        <p><span>Interests:</span> Computer Science, Data Science, Programming, Artifical Intelligence, Machine
+          Learning, Web Design, Software Engineering</p>
+      </div>
+      <div class="socials" style="margin-left: 05px; margin-top: 30px">
+        <a style="text-decoration: none" href="https://www.linkedin.com/in/joshua-cunningham-923622193/"
+          target="_blank"><img class="social" src="../assets/linked.png" alt="linkedIn"></a>
+        <a style="text-decoration: none" href="https://github.com/jcun-umich/portfolio" target="_blank"><img
+            class="social" id="github" src="../assets/github.png" width="25px" height="25px" alt="github"></a>
+        <a style="text-decoration: none" href="https://www.instagram.com/jshcnnnghm/" target="_blank"><img
+            class="social" src="../assets/insta.png" width="25px" height="25px" alt="instagram"></a>
+      </div>
+    </li>
+  </ul>
+  <script src="../style/darkmode.js"></script>
+</body>

@@ -1,22 +1,12 @@
 {
-    "name": "website",
-    "version": "1.0.0",
-    "description": "website",
-    "main": "https://github.com/JCUN23/website2.0/main/public/index.html",
-    "scripts": {
-      "build": "npm run build"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/JCUN23/website2.0.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/JCUN23/website2.0/issues"
-    },
-    "homepage": "https://github.com/JCUN23/website2.0#readme",
-    "dependencies": {
-      "build": "^0.1.4"
-    }
-  }
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
