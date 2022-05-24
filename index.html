@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style/home.css">
+  <title>Josh Cunningham</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <script src="style/typing.js"></script>
+  <script type="text/javascript">
+    function yourFunction() {
+      num = Math.floor(Math.random() * 5);
+      const pages = ["/pages/about.html", "/pages/wiki.html", "/pages/resume.html", "/pages/portfolio.html", "/pages/contact.html"];
+      var link = document.getElementById("lucky");
+      link.setAttribute("href", pages[num]);
+      return false;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <video disableRemotePlayback autoplay class="video1" muted loop id="myVideo">
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+  <div class="search-bar">
+    <img class="mag" src="/assets/bar-dark.png" alt="bar">
+    <p class="moving-text">Is Josh Cunningham
+      <a href="" class="typewrite" data-period="2000" data-type='[ "a developer?", "an engineer?", "a problem solver?",
+               "a Wolverine?", "your next intern?" ]'>
+        <span class="wrap"></span>
+      </a>
+    </p>
+  </div>
+  <div class="buttons"
+    style="display: flex; flex-direction: horizontal; margin-left: 0px; margin-bottom: 15px; margin-top: 10px;">
+    <a href="/pages/about.html" style="margin: 0 auto; margin-right: 250px;" ><button
+        class="lucky fast-transition" id="search">
+        <p id="search">Google Search</p>
+      </button></a>
+    <a href="#" style="margin: 0 auto; margin-left: -220px;" id="lucky" onclick="yourFunction()"><button
+        class="lucky fast-transition" id="lucky">
+        <p>I'm Feeling Lucky</p>
+      </button></a>
+  </div>
+  <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
+  <script src="style/darkmode.js"></script>
+</body>
+
+</html>
