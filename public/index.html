@@ -9,7 +9,7 @@
   <script type="text/javascript">
     function yourFunction() {
       num = Math.floor(Math.random() * 5);
-      const pages = ["/pages/about.html", "/pages/wiki.html", "/pages/documents.html", "/pages/portfolio.html", "/pages/contact.html"];
+      const pages = ["about.html", "wiki.html", "resume.html", "portfolio.html", "contact.html"];
       var link = document.getElementById("lucky");
       link.setAttribute("href", pages[num]);
       return false;
@@ -34,7 +34,7 @@
   </div>
   <div class="buttons"
     style="display: flex; flex-direction: horizontal; margin-left: 0px; margin-bottom: 15px; margin-top: 10px;">
-    <a href="/pages/about.html" style="margin: 0 auto; margin-right: 250px;" ><button
+    <a href="about.html" style="margin: 0 auto; margin-right: 250px;" ><button
         class="lucky fast-transition" id="search">
         <p id="search">Google Search</p>
       </button></a>
@@ -44,7 +44,7 @@
       </button></a>
   </div>
   <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Light Mode</button>
-  <script src="style/darkmode.js"></script>
+  <script src="/style/darkmode.js"></script>
 </body>
 
 </html>

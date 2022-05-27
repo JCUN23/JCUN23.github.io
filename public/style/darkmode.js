@@ -7,7 +7,7 @@ var path = window.location.pathname;
 var page = path.split("/").pop();
 console.log( page );
 const enableDarkMode = () => {
-    if (page === "index.html" || path === "/") {
+    if (page === "index" || path === "/") {
         var t = document.getElementById("dark-mode-toggle");
         var logo = document.getElementById("myVideo");
         var body = document.body;
@@ -36,21 +36,21 @@ const enableDarkMode = () => {
         var logo = document.getElementById("myVideo");
         var body = document.body;
         var top_row = document.getElementById("myHeader");
-        document.getElementsByClassName("bar")[0].src = "../assets/bar-dark.png";
+        document.getElementsByClassName("bar")[0].src = "assets/bar-dark.png";
         body.style.background = "black";
         body.style.color = "white";
         
         t.innerText = "Toggle Light Mode";
         
-        logo.src = "../assets/DD-unscreen.mp4";
+        logo.src = "assets/DD-unscreen.mp4";
         
         top_row.style.background = "black";
         top_row.style.color = "white";
 
-        if (page === "about.html") {
+        if (page === "about") {
             var content = document.getElementById("content");
             var urls = document.getElementsByClassName("url");
-            document.getElementById("github").src = "../assets/github-white.png";
+            document.getElementById("github").src = "assets/github-white.png";
             
             content.style.color = "white";
             
@@ -58,13 +58,13 @@ const enableDarkMode = () => {
                 urls[i].style.color = "#b4b4b4";
             }
         }
-        else if (page === "contact.html") {
+        else if (page === "contact") {
             var x = document.getElementById("myVideo2");
             var idk = document.getElementsByClassName("table");
             var idk2 = document.getElementsByClassName("url");
             var mar = document.getElementsByClassName("marquee-content");
     
-            x.src = "../assets/joshx.mp4";
+            x.src = "assets/joshx.mp4";
             for (let i = 0; i < idk.length; i++) {
                 idk[i].style.border = "1px solid white";
             }
@@ -73,26 +73,26 @@ const enableDarkMode = () => {
             }
             mar[0].style.color = "#44aa4b";
         }
-        else if (page === "portfolio.html") {
+        else if (page === "portfolio") {
             var tube = document.getElementById("myVideo2");
     
-            tube.src = "../assets/joshtube-dark.mp4";
+            tube.src = "assets/joshtube-dark.mp4";
         }
-        else if (page === "resume.html" || page === "transcript.html" || page === "certificate.html") {
+        else if (page === "resume" || page === "transcript" || page === "certificate") {
             var right = document.getElementById("right");
             right.style.background = "rgb(61, 61, 61)";
 
-            document.getElementsByClassName("bar")[0].src = "../../assets/bar-dark.png";
+            document.getElementsByClassName("bar")[0].src = "../assets/bar-dark.png";
             var logo = document.getElementById("myVideo");
-            logo.src = "../../assets/DD-unscreen.mp4";
+            logo.src = "../assets/DD-unscreen.mp4";
         }
-        else if (page === "wiki.html") {
+        else if (page === "wiki") {
             var img = document.getElementById("myVideo2")
             var contents = document.getElementById("contents");
             var right = document.getElementById("right")
             var table = document.getElementsByClassName("table");
     
-            img.src = "../assets/joshipedia-dark.png";
+            img.src = "assets/joshipedia-dark.png";
     
             contents.style.border = "1px solid white";
             right.style.border = "1px solid white";
@@ -107,7 +107,7 @@ const enableDarkMode = () => {
 }
 
 const disableDarkMode = () => {
-    if (page === "index.html" || page === "") {
+    if (page === "index" || page === "") {
         var t = document.getElementById("dark-mode-toggle");
         var logo = document.getElementById("myVideo");
         var body = document.body;
@@ -140,21 +140,21 @@ const disableDarkMode = () => {
         var logo = document.getElementById("myVideo");
         var body = document.body;
         var top_row = document.getElementById("myHeader");
-        document.getElementsByClassName("bar")[0].src = "../assets/bar-light.png";
+        document.getElementsByClassName("bar")[0].src = "assets/bar-light.png";
         body.style.background = "white";
         body.style.color = "black";
         
         t.innerText = "Toggle Dark Mode";
         
-        logo.src = "../assets/logo-light.mp4";
+        logo.src = "assets/logo-light.mp4";
         
         top_row.style.background = "white";
         top_row.style.color = "black";
 
-        if (page === "about.html") {
+        if (page === "about") {
             var content = document.getElementById("content");
             var urls = document.getElementsByClassName("url");
-            document.getElementById("github").src = "../assets/github.png";
+            document.getElementById("github").src = "assets/github.png";
             
             content.style.color = "black";
             
@@ -162,13 +162,13 @@ const disableDarkMode = () => {
                 urls[i].style.color = "green";
             }
         }
-        else if (page === "contact.html") {
+        else if (page === "contact") {
             var x = document.getElementById("myVideo2");
             var idk = document.getElementsByClassName("table");
             var idk2 = document.getElementsByClassName("url");
             var mar = document.getElementsByClassName("marquee-content");
     
-            x.src = "../assets/joshx-light.mp4";
+            x.src = "assets/joshx-light.mp4";
             for (let i = 0; i < idk.length; i++) {
                 idk[i].style.border = "1px solid black";
             }
@@ -178,25 +178,25 @@ const disableDarkMode = () => {
     
             mar[0].style.color = "white";
         }
-        else if (page === "portfolio.html") {
+        else if (page === "portfolio") {
             var tube = document.getElementById("myVideo2");
     
-            tube.src = "../assets/joshtube.mp4";
+            tube.src = "assets/joshtube.mp4";
         }
-        else if (page === "resume.html" || page === "transcript.html" || page === "certificate.html") {
+        else if (page === "resume" || page === "transcript" || page === "certificate") {
             var right = document.getElementById("right");
             right.style.background = "#E6E5E5";
-            document.getElementsByClassName("bar")[0].src = "../../assets/bar-light.png";
+            document.getElementsByClassName("bar")[0].src = "../assets/bar-light.png";
             var logo = document.getElementById("myVideo");
-            logo.src = "../../assets/logo-light.mp4";
+            logo.src = "../assets/logo-light.mp4";
         }
-        else if (page === "wiki.html") {
+        else if (page === "wiki") {
             var img = document.getElementById("myVideo2")
             var contents = document.getElementById("contents");
             var right = document.getElementById("right")
             var table = document.getElementsByClassName("table");
     
-            img.src = "../assets/joshipedia-light.png";
+            img.src = "assets/joshipedia-light.png";
     
             contents.style.border = "1px solid black";
             right.style.border = "1px solid black";
@@ -222,13 +222,13 @@ else {
 // When someone clicks the button
 darkModeToggle.addEventListener('click', () => {
   // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode'); 
+  darkMode = localStorage.getItem('darkMode');
   
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
     enableDarkMode();
-  // if it has been enabled, turn it off  
-  } else {  
-    disableDarkMode(); 
+  // if it has been enabled, turn it off
+  } else {
+    disableDarkMode();
   }
 });
